@@ -17,8 +17,8 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Hi, I'm <strong>Spencer</strong>, a full-stack Software Engineer based in New Zealand.</h1>
-							<p class="major">My stack is JavaScript/TypeScript/Node.js, React, Ruby, and PostgreSQL.<br />
-							I have also built with NoSQL, Redis, AWS, Sinatra, and Docker, and load tested with Artillery.</p>
+							<p class="major">My primary stack is JavaScript/Node.js, React, Ruby, PostgreSQL, AWS, and Git/GitHub.
+							I have also built with TypeScript, Go, NoSQL, Redis, Sinatra, and Docker, and load tested with Artillery.</p>
 							<p class="major">Most recently, I built <strong>Twine</strong>, an auto-scaling WebSocket infrastructure with connection state recovery that drops into existing applications.</p>
 							<ul class="actions stacked">
 								<li><a href="#first" class="button big wide smooth-scroll-middle">Twine</a></li>
@@ -37,20 +37,79 @@
 				<!-- Two -->
 					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
 						<div class="content">
-							<p>TypeScript, Node.js, Socket.IO, AWS</p>
+							<p>TypeScript, Node.js, Socket.IO, AWS (CloudFormation, EC2, Elastic Beanstalk, ElastiCache Redis, DynamoDB, S3, Application Load Balancer, Secrets Manager, Certificate Manager, IAM)</p>
 							<p class="major">Built remotely with three North American teammates, Twine provides <strong>auto-scaling WebSocket infrastructure</strong> that deploys in a developer's AWS account, without compromising credentials.<br /><br />
 								This infrastructure includes a <strong>load-tested pub/sub mechanism</strong> that developers access through a secure API, and automatic <strong>client connection state recovery</strong>.<br /><br />
-								Additionally, it <strong>persists all published data</strong> as a backup, and gives developers complete control of their data and WebSocket infrastructure.
-								<br /><br />Twine drops into existing applications via the <strong>Twine client and server libraries</strong>.
+								Additionally, Twine <strong>persists all published data</strong> as a backup, and gives developers complete control of their data and WebSocket infrastructure.
+								<br /><br />Twine drops into existing applications through its <strong>client and server libraries</strong>.
 							</p>
 							<ul class="actions stacked">
 								<li><a href="https://twine-realtime.github.io" target="_blank" class="button">Twine Case Study</a></li>
 							</ul>
 						</div>
 						<div class="image" style="background-color: #23201ccc;">
-							<img src="images/vert1.png" alt="" />
+							<img src="images/vert1.png" alt=""/>
 						</div>
 					</section>
+
+				<section class="wrapper style1 align-center">
+						<!-- <div class="inner">
+							<h2>Massa sed condimentum</h2>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi id ante sed ex pharetra lacinia sit amet vel massa. Donec facilisis laoreet nulla eu bibendum. Donec ut ex risus. Fusce lorem lectus, pharetra pretium massa et, hendrerit vestibulum odio lorem ipsum.</p>
+						</div> -->
+
+						<!-- Gallery -->
+						<div class="gallery style2 medium lightbox">
+							<article>
+								<a href="images/final.png" class="image">
+									<img src="images/final.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Deployed Infrastructure</h3>
+								</div>
+							</article>
+							<article>
+								<a href="images/persist.png" class="image">
+									<img src="images/persist.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Shared State</h3>
+								</div>
+							</article>
+							<article>
+								<a href="images/hub.png" class="image">
+									<img src="images/hub.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Pub/Sub Hub</h3>
+								</div>
+							</article>
+							<article>
+								<a href="images/sticky.png" class="image">
+									<img src="images/sticky.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Sticky Sessions</h3>
+								</div>
+							</article>
+							<article>
+								<a href="images/deploy.png" class="image">
+									<img src="images/deploy.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>Deployment Process</h3>
+								</div>
+							</article>
+							<article>
+								<a href="images/cookie.png" class="image">
+									<img src="images/cookie.png" alt="" />
+								</a>
+								<div class="caption">
+									<h3>HTTPOnly Cookies</h3>
+								</div>
+							</article>
+						</div>
+				</section>
 
 				<!-- Three -->
 				<section class="wrapper style1 align-center">
@@ -61,26 +120,30 @@
 								<span class="icon solid style2 major fa-book-dead"></span>
 								<h3>Horror Day</h3>
 								<p>GPT-4 Turbo LLM, React, DynamoDB</p>
-								<p>Submit a journal entry every 24hrs and receive a 'horrified' version of your day via prompt engineering. Create an account to view past horrified entries.</p>
+								<p>Submit a journal entry every 24hrs and receive a 'horrified' version of your day that you can save. Create an account to view past horrified entries.<br /><br />
+									<i>Prompt engineering, user authentication, data persistence, real-world API.</i></p>
 								</p>
 							</section>
 							<section>
 								<span class="icon solid style2 major fa-mountain"></span>
 								<h3>Climb Comp</h3>
 								<p>Ruby, Sinatra, React, PostgreSQL</p>
-								<p>Create and manage indoor bouldering competitions, or sign up as a climber to register for competitions and track your scores and ranking.</p>
+								<p>Create and manage indoor bouldering competitions, or sign up as a climber to register for competitions and track your scores and ranking.<br /><br />
+									<i>Five SQL tables, pagination via SQL queries, user authentication, CRUD.</i></p>
 							</section>
 							<section>
 								<span class="icon brands style2 major fa-github"></span>
 								<h3>Artillery</h3>
 								<p>JavaScript</p>
-								<p>Implemented a new feature to log custom messages for popular load testing tool Artillery. From zero load testing experience to Artillery PR in two weeks.</p>
+								<p>Implemented a new feature to log custom messages for popular load testing tool Artillery.<br /><br />
+									<i>From zero load testing experience to Artillery PR in two weeks.</i></p>
 							</section>
 							<section>
 								<span class="icon solid style2 major fa-chart-bar"></span>
 								<h3>Request Inspect</h3>
 								<p>JavaScript, Node.js, React, MongoDB</p>
-								<p>Send webhook or HTTP requests to a unique URL generated by Request Inspect, then use the UI to inspect them</p>
+								<p>Send webhook or HTTP requests to a unique URL generated by Request Inspect, then use the UI to inspect them.<br /><br />
+								<i>WebSocket real-time updates, one-click URL generation, tabular data display.</i></p>
 							</section>
 						</div>
 					</div>
