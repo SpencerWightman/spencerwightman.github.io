@@ -346,6 +346,28 @@ main {
 		left: 0.8rem;
 	}
 
+	.inline-arrow,
+	.project-card__arrow {
+		font-size: 0;
+	}
+
+	.inline-arrow::before,
+	.project-card__arrow::before {
+		font-family: Arial, Helvetica, sans-serif;
+		font-weight: 400;
+		content: "\2192\FE0E";
+	}
+
+	.inline-arrow::before {
+		font-size: 0.95rem;
+	}
+
+	.project-card__arrow::before {
+		font-size: 1.2rem;
+		line-height: 1;
+		transform: translateY(0.15em);
+	}
+
 	.page-footer {
 		gap: 1rem;
 		flex-direction: column;
