@@ -147,7 +147,6 @@ main {
 }
 
 .project-card h2 {
-	max-width: 10ch;
 	margin: auto 0 0.7rem;
 	font-size: clamp(2rem, 3vw, 3.35rem);
 	font-weight: 500;
