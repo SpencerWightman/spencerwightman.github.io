@@ -57,11 +57,25 @@ a:focus-visible {
 	width: 100%;
 	padding: 1.8rem var(--page-pad) 0;
 	justify-content: space-between;
-	align-items: baseline;
+	align-items: flex-start;
+}
+
+.site-identity {
+	display: flex;
+	gap: 0.35rem;
+	flex-direction: column;
+}
+
+.site-identity__role {
+	margin: 0;
+	color: var(--muted);
+	font-size: 0.76rem;
+	letter-spacing: 0.01em;
 }
 
 .name {
-	font-size: clamp(1rem, 1.15vw, 1.2rem);
+	margin: 0;
+	font-size: clamp(1.08rem, 1.24vw, 1.3rem);
 	font-weight: 650;
 	letter-spacing: -0.025em;
 }
@@ -73,7 +87,7 @@ a:focus-visible {
 
 .site-header nav a {
 	position: relative;
-	font-size: 0.78rem;
+	font-size: 0.84rem;
 	font-weight: 600;
 	letter-spacing: 0.01em;
 }
@@ -101,7 +115,10 @@ a:focus-visible {
 }
 
 main {
-	padding: clamp(4.5rem, 7vw, 7rem) var(--page-pad) clamp(5rem, 8vw, 8rem);
+	padding:
+		calc(clamp(4.5rem, 7vw, 7rem) - 1.05rem)
+		var(--page-pad)
+		clamp(5rem, 8vw, 8rem);
 }
 
 .visually-hidden {
@@ -140,7 +157,7 @@ main {
 	padding-top: 0.75rem;
 	justify-content: space-between;
 	color: var(--muted);
-	font-size: 0.65rem;
+	font-size: 0.7rem;
 	font-weight: 650;
 	letter-spacing: 0.075em;
 	text-transform: uppercase;
@@ -148,7 +165,7 @@ main {
 
 .project-card h2 {
 	margin: auto 0 0.7rem;
-	font-size: clamp(2rem, 3vw, 3.35rem);
+	font-size: clamp(2.1rem, 3.1vw, 3.5rem);
 	font-weight: 500;
 	letter-spacing: -0.055em;
 	line-height: 0.96;
@@ -158,7 +175,7 @@ main {
 	max-width: 34rem;
 	margin: 0;
 	color: #55544f;
-	font-size: clamp(0.82rem, 0.95vw, 0.96rem);
+	font-size: clamp(0.86rem, 1vw, 1rem);
 	letter-spacing: -0.01em;
 	line-height: 1.48;
 }
@@ -301,7 +318,7 @@ main {
 	}
 
 	.project-card h2 {
-		font-size: clamp(2rem, 2.45vw, 2.625rem);
+		font-size: clamp(2.1rem, 2.55vw, 2.75rem);
 	}
 }
 
@@ -317,11 +334,38 @@ main {
 
 @media (max-width: 43rem) {
 	.site-header {
+		display: grid;
 		padding-top: 1.25rem;
+		grid-template-columns: 1fr;
+		row-gap: 0.35rem;
+		align-items: baseline;
+	}
+
+	.site-identity {
+		display: contents;
+	}
+
+	.name {
+		grid-column: 1;
+		grid-row: 1;
+		font-size: 1.15rem;
+	}
+
+	.site-identity__role {
+		grid-column: 1;
+		grid-row: 2;
+		font-size: 0.78rem;
+	}
+
+	.site-header nav {
+		grid-column: 1;
+		grid-row: 3;
+		gap: 0.9rem;
+		justify-self: start;
 	}
 
 	.site-header nav a {
-		font-size: 0.72rem;
+		font-size: 0.8rem;
 	}
 
 	.site-header nav a span {
@@ -329,24 +373,33 @@ main {
 	}
 
 	main {
-		padding-top: 4rem;
+		padding-top: 1.05rem;
 	}
 
 	.project-grid {
 		grid-template-columns: 1fr;
-		gap: 4.5rem;
+		gap: 3.5rem;
 	}
 
 	.project-card__header {
-		min-height: 12.5rem;
+		min-height: 10.75rem;
+	}
+
+	.project-card__meta {
+		font-size: 0.67rem;
 	}
 
 	.project-card h2 {
-		font-size: clamp(2.5rem, 14vw, 4.4rem);
+		margin-top: 1.65rem;
+		font-size: clamp(2.35rem, 12vw, 3.5rem);
 	}
 
 	.project-card__header > p {
 		font-size: 0.9rem;
+	}
+
+	.project-card__visual {
+		aspect-ratio: 0.9;
 	}
 
 	.project-card__footer {
