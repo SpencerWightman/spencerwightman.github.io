@@ -69,7 +69,7 @@ a:focus-visible {
 .site-identity__role {
 	margin: 0;
 	color: var(--muted);
-	font-size: 0.76rem;
+	font-size: 0.82rem;
 	letter-spacing: 0.01em;
 }
 
@@ -116,7 +116,7 @@ a:focus-visible {
 
 main {
 	padding:
-		calc(clamp(4.5rem, 7vw, 7rem) - 1.05rem)
+		calc(clamp(4.5rem, 7vw, 7rem) - 1.1rem)
 		var(--page-pad)
 		clamp(5rem, 8vw, 8rem);
 }
@@ -303,7 +303,7 @@ main {
 	justify-content: space-between;
 	border-top: 1px solid var(--line);
 	color: var(--muted);
-	font-size: 0.7rem;
+	font-size: 0.82rem;
 	letter-spacing: 0.01em;
 }
 
@@ -354,7 +354,7 @@ main {
 	.site-identity__role {
 		grid-column: 1;
 		grid-row: 2;
-		font-size: 0.78rem;
+		font-size: 0.84rem;
 	}
 
 	.site-header nav {
@@ -373,7 +373,7 @@ main {
 	}
 
 	main {
-		padding-top: 1.05rem;
+		padding-top: 1rem;
 	}
 
 	.project-grid {
@@ -433,6 +433,7 @@ main {
 	.page-footer {
 		gap: 1rem;
 		flex-direction: column;
+		font-size: 0.84rem;
 	}
 }
 
