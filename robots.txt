@@ -5,7 +5,7 @@ Disallow: /
 # Allow LinkedIn link previews for the homepage and its Open Graph image only.
 User-agent: LinkedInBot
 Allow: /$
-Allow: /images/og.png$
+Allow: /images/og-homepage.png$
 Disallow: /
 
 # AI training and generative-AI crawlers.
